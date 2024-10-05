@@ -1,5 +1,6 @@
 import React from 'react'
-import Robert from './assets/me.jpg'
+import Robert from './assets/me.jpg';
+import Boberto from './assets/Boberto.png';
 
 const LandingImage = () => {
 
@@ -10,10 +11,13 @@ const LandingImage = () => {
                     <img src={Robert} alt="Image of Robert Thao" />
                 </div>
                 <div className="flip-image-back">
+                    <img src={Boberto} alt="Image of Robert Thao" />
+                </div>
+                {/* <div className="flip-image-back">
                     <p>Software Engineer</p>
                     <p>Project Manager</p>
                     <p>Computer Science Student</p>
-                </div>
+                </div> */}
             </div>
         </div>
     )
