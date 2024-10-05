@@ -5,6 +5,7 @@ import ExperiencesSection from '../components/ExperiencesSection';
 import EducationSection from '../components/EducationSection';
 import ProjectSection from '../components/ProjectSection';
 import ConnectSection from '../components/ConnectSection';
+import ToolsSection from '../components/ToolsSection';
 
 const HomePage = () => {
     // variable to hold the width value of the viewport of the device the user is currently on
@@ -27,7 +28,7 @@ const HomePage = () => {
         return () => {
             window.removeEventListener("resize", viewPortChange);
         }
-    }, []);
+    }, [viewPortWidth]);
 
     return (
         <div>
