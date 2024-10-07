@@ -15,18 +15,18 @@
     margin: 0;
 }
 
+.sub-headers {
+    text-align: center;
+    font-size: 2rem;
+}
+
 @media screen and (min-width: 625px) {
     .main-background {
         padding: 20vh 10vw 0 10vw;
     }
     .sub-headers {
-        font-size: 2rem;
         padding-top: 15vh;
     }
-}
-
-.sub-headers {
-    text-align: center;
 }
 
 /* NavBar */
@@ -164,8 +164,54 @@
     border-radius: 50%;
 }
 
+.tool-belt {
+    text-align: center;
+}
+
+.tool-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tool-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+hr {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border: 0.5px solid #000;
+}
+
 @media screen and (min-width: 625px) {
     #top-of-page article p {
+        font-size: 1.5rem;
+    }
+    .tool-belt {
+
+    }
+    .tool-title {
+
+    }
+    .tool-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-between;
+        gap: 50px;
+        overflow: scroll;
+        width: 100%;
+        mask: var(lin)
+    }
+    .tool {
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        vertical-align: center;
+    }
+    .tool-name {
         font-size: 1.5rem;
     }
 }

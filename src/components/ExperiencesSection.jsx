@@ -12,7 +12,7 @@ const ExperiencesPage = () => {
             <VerticalTimeline
                 lineColor={'lightgrey'}
             >
-            {experiences.map(((experience, key) => {
+            {experiences.map((experience, key) => {
                 return(
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -37,7 +37,7 @@ const ExperiencesPage = () => {
                         </ul>
                     </VerticalTimelineElement>
                 )
-            }))}
+            })}
             </VerticalTimeline>
         </section>
     )

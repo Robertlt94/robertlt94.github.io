@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import MyInfoContext from '../MyInfoContext';
-import ToolBelt from './ToolsSection';
 import BuildIcon from '@mui/icons-material/Build';
 
 const ProjectSection = () => {
@@ -9,7 +8,6 @@ const ProjectSection = () => {
     return (
         <section className='project-section' id="project">
             <h1 className='sub-headers' id="project-section-anchor">Projects</h1>
-            <ToolBelt />
             <div>
                 <h1 className='under-development'>Currently:</h1>
                 <BuildIcon fontSize='large' color='warning' />

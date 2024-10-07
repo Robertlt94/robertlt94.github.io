@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import MyInfoContext from '../MyInfoContext';
 import LandingImage from './LandingImage';
+import ToolBelt from './ToolBelt';
 
 const LandingSection = () => {
     const {robert} = useContext(MyInfoContext);
@@ -18,6 +19,7 @@ const LandingSection = () => {
             <article>
                 <p>{robert.about}</p>
             </article>
+            <ToolBelt />
         </section>
     )
 };

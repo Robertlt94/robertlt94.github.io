@@ -12,9 +12,6 @@ import Brakebush from './components/assets/brakebush_chicken_logo.jpeg';
 import Randstad from './components/assets/randstadusa_logo.jpeg';
 import Teksystems from './components/assets/teksystems_logo.jpeg';
 import Sppl from './components/assets/saint_paul_public_library_logo.jpeg';
-import Boberto from './components/assets/Boberto.png';
-import Roberto from './components/assets/me.jpg';
-import Setup from './components/assets/setup.jpeg';
 import Linkedin from './components/assets/linkedin_logo.svg';
 import Github from './components/assets/github_logo.svg';
 import MetroState from './components/assets/Metro_State_University.jpg';
@@ -32,7 +29,6 @@ const MyInfoProvider = ({children}) => {
             about: "With a rich background spanning public health, retail, and community outreach, I bring a unique perspective to IT, software engineering, and project management. My journey across various industries has refined my problem-solving abilities, leadership skills, and customer-centric approach. Alongside my non-traditional path, I’ve pursued certifications in front-end and back-end development, full-stack software engineering, and project management, driven by a passion for technology and innovation. I thrive in dynamic, fast-paced environments, and am eager to leverage my multifaceted skills to create impactful solutions that meet the needs of both teams and clients."
         }
     );
-    const [heroImages] = useState([{id: 0, image: Boberto}, {id: 1, image: Roberto}, {id: 2, image: Setup}]);
     const [education] = useState(
         [
             {
@@ -230,6 +226,45 @@ const MyInfoProvider = ({children}) => {
             }
         ]
     );
+    const [techStack] = useState(
+        {
+            currentTechStack:
+                [
+                    {name: "React.js", icon: "reactjs"}, 
+                    {name: "React Router", icon: "reactrouter" },
+                    {name: "HTML5", icon: "html5" },
+                    {name: "Bootstrap 4", icon: "bootstrap4" },
+                    {name: "Figma", icon: "figma" },
+                    {name: "PostgreSQL", icon: "postgresql" },
+                    {name: "Canva", icon: "canva" },
+                    {name: "CSS3", icon: "css3" },
+                    {name: "Figma", icon: "figma" },
+                    {name: "Git", icon: "git" },
+                    {name: "Github", icon: "github" },
+                    {name: "Homebrew", icon: "homebrew" },
+                    {name: "Jest", icon: "jest" },
+                    {name: "Jira", icon: "jira" },
+                    {name: "jQuery", icon: "jquery" },
+                    {name: "Json", icon: "json" },
+                    {name: "MaterialUI", icon: "materialui" },
+                    {name: "Node.js", icon: "nodejs" },
+                    {name: "Npm", icon: "npm" },
+                    {name: "Slack", icon: "slack" },
+                    {name: "VScode", icon: "vscode" }
+                ],
+            interestedInTechStack:
+                [
+                    {name: "AWS", icon: "aws" },
+                    {name: "Chrome", icon: "chrome" },
+                    {name: "GraphQL", icon: "graphql" },
+                    {name: "MongoDB", icon: "mongodb" },
+                    {name: "Next.js", icon: "nextjs" },
+                    {name: "Python", icon: "python" },
+                    {name: "Three.js", icon: "threejs" },
+                    {name: "TypeScript", icon: "typescript" }
+                ]
+        }
+    )
     const [connects] = useState(
         [
             {
@@ -246,7 +281,7 @@ const MyInfoProvider = ({children}) => {
     )
 
     return (
-        <MyInfoContext.Provider value={{robert, heroImages, education, experiences, projects, connects}} >
+        <MyInfoContext.Provider value={{robert, education, experiences, projects, techStack, connects}} >
             {children}
         </MyInfoContext.Provider>
     )

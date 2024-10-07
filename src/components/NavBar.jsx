@@ -10,7 +10,7 @@ const navBar = ({viewPortWidth}) => {
 
     return (
         <section className="navbar">
-            {viewPortWidth < 625?
+            {viewPortWidth < 625 ?
                 <div className="mobile-navbar-container">
                     <a href="#top-of-page" className="mobile-navbar-btns">
                         <div>

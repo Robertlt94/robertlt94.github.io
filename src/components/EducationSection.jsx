@@ -8,7 +8,7 @@ const EducationSection = () => {
         <section className='education-section' id="education"> 
             <h1 className='sub-headers' id="education-section-anchor">Education</h1>
             <div className="education-container">
-                {education.map(((degree, index) => {
+                {education.map((degree, index) => {
                     return (
                         <div className="each-education" key={index}>
                             {/* <img src={degree.image} className="school-picture" /> */}
@@ -20,7 +20,7 @@ const EducationSection = () => {
                             </ul>
                         </div>
                     )
-                }))}
+                })}
             </div>
         </section>
     )
