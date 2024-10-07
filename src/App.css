@@ -171,6 +171,10 @@
 .tool-title {
     font-size: 1.5rem;
     font-weight: 600;
+    transform: translateY(10px);
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto 0 auto;
 }
 
 .tool-container {
@@ -178,12 +182,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 50px;
+    border: 1px black solid;
+    padding: 5vh 0 5vh 0;
 }
 
-hr {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border: 0.5px solid #000;
+.tool-name {
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 625px) {

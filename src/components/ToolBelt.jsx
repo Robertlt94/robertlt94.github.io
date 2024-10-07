@@ -23,7 +23,6 @@ const ToolBelt = () => {
                     )
                 })}
             </div>
-            <hr />
         </article>
     )
 }
