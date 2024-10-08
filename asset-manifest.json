@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1db222ff.css",
-    "main.js": "/static/js/main.270b7fd7.js",
+    "main.css": "/static/css/main.4da8685a.css",
+    "main.js": "/static/js/main.ad4261fc.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Boberto.png": "/static/media/Boberto.01e950beff1eab48830f.png",
     "static/media/Metro_State_University.jpg": "/static/media/Metro_State_University.e233d0f21d09e19a6454.jpg",
@@ -13,12 +13,12 @@
     "static/media/github_logo.svg": "/static/media/github_logo.e21209f267368a1bd7975dab65fcd209.svg",
     "static/media/linkedin_logo.svg": "/static/media/linkedin_logo.c5b0b1b4792c4adac01506428d371c41.svg",
     "index.html": "/index.html",
-    "main.1db222ff.css.map": "/static/css/main.1db222ff.css.map",
-    "main.270b7fd7.js.map": "/static/js/main.270b7fd7.js.map",
+    "main.4da8685a.css.map": "/static/css/main.4da8685a.css.map",
+    "main.ad4261fc.js.map": "/static/js/main.ad4261fc.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1db222ff.css",
-    "static/js/main.270b7fd7.js"
+    "static/css/main.4da8685a.css",
+    "static/js/main.ad4261fc.js"
   ]
 }
