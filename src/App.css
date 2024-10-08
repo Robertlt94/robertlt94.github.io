@@ -197,7 +197,8 @@
     font-weight: 600;
     transform: translateY(10px);
     background-color: #fff;
-    width: 50%;
+    width: max-content;
+    padding: 0 20px 0 20px;
     margin: 0 auto 0 auto;
 }
 
