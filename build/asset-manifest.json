@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.185de5c0.css",
-    "main.js": "/static/js/main.d0eaee71.js",
+    "main.css": "/static/css/main.1db222ff.css",
+    "main.js": "/static/js/main.270b7fd7.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Boberto.png": "/static/media/Boberto.01e950beff1eab48830f.png",
-    "static/media/setup.jpeg": "/static/media/setup.cacb2841f8b2a08a8707.jpeg",
     "static/media/Metro_State_University.jpg": "/static/media/Metro_State_University.e233d0f21d09e19a6454.jpg",
     "static/media/me.jpg": "/static/media/me.1338709d571ffb298326.jpg",
     "static/media/Mid_State_Technical_College.jpg": "/static/media/Mid_State_Technical_College.c3452b5a4c640d97ed90.jpg",
@@ -14,12 +13,12 @@
     "static/media/github_logo.svg": "/static/media/github_logo.e21209f267368a1bd7975dab65fcd209.svg",
     "static/media/linkedin_logo.svg": "/static/media/linkedin_logo.c5b0b1b4792c4adac01506428d371c41.svg",
     "index.html": "/index.html",
-    "main.185de5c0.css.map": "/static/css/main.185de5c0.css.map",
-    "main.d0eaee71.js.map": "/static/js/main.d0eaee71.js.map",
+    "main.1db222ff.css.map": "/static/css/main.1db222ff.css.map",
+    "main.270b7fd7.js.map": "/static/js/main.270b7fd7.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.185de5c0.css",
-    "static/js/main.d0eaee71.js"
+    "static/css/main.1db222ff.css",
+    "static/js/main.270b7fd7.js"
   ]
 }
