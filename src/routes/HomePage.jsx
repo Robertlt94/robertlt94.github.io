@@ -15,7 +15,6 @@ const HomePage = () => {
         function viewPortChange() {
             setViewPortWidth(window.innerWidth)
             // console logs current viewPortWidth value
-            console.log(viewPortWidth)
         };
         // call the function with initial page load to obtain initial value
         viewPortChange();

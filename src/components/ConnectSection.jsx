@@ -8,7 +8,7 @@ const ConnectSection = () => {
         <section className='connect-section' id="connect">
             <h1 className='sub-headers' id="bottom-of-page">Connect with me:</h1>
             <div className='connect-container'>
-                {connects.map(((connect, index) => {
+                {connects.map((connect, index) => {
                     return (
                         <a href={connect.link} className="each-connect">
                             <div key={index} >
@@ -19,7 +19,7 @@ const ConnectSection = () => {
                             </div>
                         </a>
                     )
-                }))}
+                })}
             </div>
         </section>
     );

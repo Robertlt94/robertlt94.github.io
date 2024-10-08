@@ -20,6 +20,7 @@
     font-size: 2rem;
 }
 
+
 @media screen and (min-width: 625px) {
     .main-background {
         padding: 20vh 10vw 0 10vw;
@@ -151,17 +152,40 @@
     border-radius: 50%;
 }
 
-.flip-image-front img, .flip-image-back img {
-    width: 50vw;
-    transform: translateY(-50px);
-}
-
 .flip-image-back {
     background-color: #A8C5FF;
     color: #fff;
     transform: rotateY(180deg);
     overflow: hidden;
     border-radius: 50%;
+}
+
+.flip-image-front img {
+    width: 50vw;
+    transform: translateY(-50px);
+}
+
+.flip-image-back img {
+    width: 50vw;
+}
+
+.typewriter-container h1 {
+    text-align: center;
+}
+
+.typewriter-caret {
+    font-size: 1.5rem;
+    font-weight: 600;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #000;
+    }
 }
 
 .tool-belt {

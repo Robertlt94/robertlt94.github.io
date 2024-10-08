@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import MyInfoContext from '../MyInfoContext';
 import LandingImage from './LandingImage';
 import ToolBelt from './ToolBelt';
+import TypeWriter from './TypeWriter';
 
 const LandingSection = () => {
     const {robert} = useContext(MyInfoContext);
@@ -15,7 +16,7 @@ const LandingSection = () => {
             <div className='landing-image-container'>
                 <LandingImage />
             </div>
-            <h1 className="sub-headers" id="typewriter-effect">Hello, my name is {robert.fullName}. I am a </h1>
+            <TypeWriter />
             <article>
                 <p>{robert.about}</p>
             </article>
