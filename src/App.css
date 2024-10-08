@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 625px) {
     .main-background {
-        padding: 20vh 10vw 0 10vw;
+        padding: 15vh 10vw 0 10vw;
     }
     .sub-headers {
         padding-top: 15vh;
@@ -171,6 +171,7 @@
 
 .typewriter-container h1 {
     text-align: center;
+    margin-top: 50px;
 }
 
 .typewriter-caret {
@@ -198,17 +199,24 @@
     transform: translateY(10px);
     background-color: #fff;
     width: max-content;
-    padding: 0 20px 0 20px;
+    padding: 50px 20px 0 20px;
     margin: 0 auto 0 auto;
 }
 
 .tool-container {
+    border: 1px black solid;
+}
+
+.infinite-current, .infinite-interested {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 50px;
-    border: 1px black solid;
-    padding: 5vh 0 5vh 0;
+    gap: 30px;
+    padding: 5vh 0 5vw 0;
+}
+
+.tool {
+    padding: 5px;
 }
 
 .tool-name {
@@ -224,17 +232,84 @@
 
     }
     .tool-title {
-
+        transform: none;
     }
     .tool-container {
+        height: 250px;
+        /* background-color: #cfcfcf2b; */
+        mask-image: linear-gradient(to left, transparent 0%, #fff 50px, #fff calc(100% - 50px), transparent 100%);
+  /* 0deg = down, 90deg = left, 180deg = top, 270deg = right */
+        display: flex;
+        border: none;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .infinite-current, .infinite-interested {
         display: flex;
         flex-wrap: nowrap;
-        justify-content:space-between;
+        justify-content: space-evenly;
         gap: 50px;
-        overflow: scroll;
-        width: 100%;
-        mask: var(lin)
+        padding: 5vh 0 5vh 0;
+        position: absolute;
+        width: 100vw;
     }
+    .infinite-current {
+        left: 50%;
+    }
+    .current-loop-1 {
+        animation: first-scroll-left 15s linear infinite;
+    }
+    .current-loop-2 {
+        animation: second-scroll-left 15s linear infinite;
+    }
+    .tool-container:hover > .infinite-current {
+        animation-play-state: paused;
+    }
+    @keyframes first-scroll-left {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -500%;
+        }
+    }
+    @keyframes second-scroll-left {
+        from {
+            left: 500%;
+        }
+        to {
+            left: 0%;
+        }
+    }
+    .infinite-interested {
+        right: 0%;
+    }
+    .interested-loop-1 {
+        animation: scroll-right 20s linear infinite;
+    }
+    .interested-loop-2 {
+        animation: scroll-right 20s linear infinite;
+        animation-delay: 10s;
+    }
+    .tool-container:hover > .infinite-interested {
+        animation-play-state: paused;
+    }
+    @keyframes scroll-right {
+        from {
+            right: 130%;
+        }
+        to {
+            right: -130%;
+        }
+    }
+    /* @keyframes second-scroll-right {
+        from {
+            right: 130%;
+        }
+        to {
+            right: 0%;
+        }
+    } */
     .tool {
         width: 200px;
         height: 200px;

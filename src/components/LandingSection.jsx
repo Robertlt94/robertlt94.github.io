@@ -4,7 +4,7 @@ import LandingImage from './LandingImage';
 import ToolBelt from './ToolBelt';
 import TypeWriter from './TypeWriter';
 
-const LandingSection = () => {
+const LandingSection = ({viewPortWidth}) => {
     const {robert} = useContext(MyInfoContext);
     const greeting = "Hello, my name is Robert Thao and I am a"
     const titles = ["IT Professional", " Software Engineer", "Project Manager", "Computer Science Student"]
@@ -20,7 +20,7 @@ const LandingSection = () => {
             <article>
                 <p>{robert.about}</p>
             </article>
-            <ToolBelt />
+            <ToolBelt viewPortWidth={viewPortWidth} />
         </section>
     )
 };

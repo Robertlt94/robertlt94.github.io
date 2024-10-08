@@ -10,8 +10,8 @@ const ConnectSection = () => {
             <div className='connect-container'>
                 {connects.map((connect, index) => {
                     return (
-                        <a href={connect.link} className="each-connect">
-                            <div key={index} >
+                        <a href={connect.link} className="each-connect" key={index}>
+                            <div>
                                 <div>
                                     {connect.logo}
                                 </div>

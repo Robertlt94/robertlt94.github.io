@@ -32,7 +32,7 @@ const HomePage = () => {
         <div>
             <NavBar viewPortWidth={viewPortWidth} />
             <div className="main-background" id="observeThis">
-                <LandingSection id="top" />
+                <LandingSection id="top" viewPortWidth={viewPortWidth} />
                 <EducationSection id="education" />
                 <ExperiencesSection id="experience" />
                 <ProjectSection id="project" />
