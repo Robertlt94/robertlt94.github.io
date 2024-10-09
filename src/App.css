@@ -76,13 +76,14 @@
         padding: 2vh 0 0 0;
     }
     .navbar ul a {
+        /* font-size: 1.5rem; */
         color: #fff;
         text-decoration: none;
     }
-    .navbar ul li:first-child {
+    /* .navbar ul li:first-child {
         font-size: 3rem;
         padding: 0;
-    }
+    } */
     .navbar ul li {
         margin-top: 3vh;
         height: 5vh;
@@ -93,12 +94,21 @@
     .navbar ul li, .navBar ul li:not(:first-child) {
         transition: font-size 1s, font-weight 1s, color 1s;
     }
+    /* .navbar ul li:first-child {
+        transition: font-size 2s, font-weight 2s, color 2s;
+    } */
     /* highlights current nav button that the user is hovering */
+    /* .navbar ul li:first-child:hover {
+        font-weight: 600;
+    } */
     .navbar ul li a:hover {
         font-weight: bold;
         color: #A8C5FF;
     }
-    .navbar ul li:not(:first-child):hover {
+    /* .navbar ul li:not(:first-child):hover {
+        font-size: 2rem;
+    } */
+    .navbar ul li:hover {
         font-size: 2rem;
     }
 }
@@ -172,12 +182,17 @@
 .typewriter-container h1 {
     text-align: center;
     margin-top: 50px;
+    font-size: 2rem;
 }
 
 .typewriter-caret {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 500;
     animation: 1s blink step-end infinite;
+}
+
+.about-me {
+    font-size: 1.5rem;
 }
 
 @keyframes blink {
@@ -200,11 +215,12 @@
     background-color: #fff;
     width: max-content;
     padding: 50px 20px 0 20px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .tool-container {
     border: 1px black solid;
+    width: 100%;
 }
 
 .infinite-current, .infinite-interested {
@@ -225,100 +241,115 @@
 }
 
 @media screen and (min-width: 625px) {
-    #top-of-page article p {
-        font-size: 1.5rem;
-    }
-    .tool-belt {
-
-    }
-    .tool-title {
-        transform: none;
-    }
-    .tool-container {
-        height: 250px;
-        /* background-color: #cfcfcf2b; */
-        mask-image: linear-gradient(to left, transparent 0%, #fff 50px, #fff calc(100% - 50px), transparent 100%);
-  /* 0deg = down, 90deg = left, 180deg = top, 270deg = right */
-        display: flex;
-        border: none;
-        position: relative;
+    /* .infinite-current, .infinite-interested {
+        padding: 5vh 5vw;
+        gap: 100px;
+    } */
+    /* .tool-belt {
         overflow-x: hidden;
     }
+    .typewriter-container h1 {
+        font-size: 3rem;
+    }
+    .tool-container {
+        height: 300px;
+        display: flex;
+        border: none;
+        overflow-x: hidden;
+        mask-image: linear-gradient(to left, transparent 0%, #fff 50px, #fff calc(100% - 50px), transparent 100%);
+    }
+
     .infinite-current, .infinite-interested {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
         gap: 50px;
-        padding: 5vh 0 5vh 0;
         position: absolute;
-        width: 100vw;
+        padding: 5vh 0 5vh 0;
     }
+
     .infinite-current {
-        left: 50%;
+        right: 0%;
     }
+
     .current-loop-1 {
-        animation: first-scroll-left 15s linear infinite;
+        animation: first-right-to-left 10s linear infinite;
     }
+
     .current-loop-2 {
-        animation: second-scroll-left 15s linear infinite;
+        animation: second-right-to-left 10s linear infinite;
+        animation-delay: 10s;
+        display: none;
     }
+
     .tool-container:hover > .infinite-current {
         animation-play-state: paused;
     }
-    @keyframes first-scroll-left {
+
+    @keyframes first-right-to-left {
         from {
-            left: 0%;
-        }
-        to {
-            left: -500%;
-        }
-    }
-    @keyframes second-scroll-left {
-        from {
-            left: 500%;
+            left: 100%;
         }
         to {
             left: 0%;
         }
     }
+
+    @keyframes second-right-to-left {
+        from {
+            left: 0%;
+        }
+        to {
+            left: -100%;
+        }
+    }
+
     .infinite-interested {
         right: 0%;
     }
+
     .interested-loop-1 {
-        animation: scroll-right 20s linear infinite;
+        animation: first-scroll-right 10s linear infinite;
+        display: none;
     }
+
     .interested-loop-2 {
-        animation: scroll-right 20s linear infinite;
+        animation: second-scroll-right 10s linear infinite;
         animation-delay: 10s;
+        display: none;
     }
+
     .tool-container:hover > .infinite-interested {
         animation-play-state: paused;
     }
-    @keyframes scroll-right {
+
+    @keyframes first-scroll-right {
         from {
-            right: 130%;
+            right: 0%;
         }
         to {
-            right: -130%;
+            right: -100%;
         }
     }
-    /* @keyframes second-scroll-right {
+
+    @keyframes second-scroll-right {
         from {
-            right: 130%;
+            right: 100%;
         }
         to {
             right: 0%;
         }
-    } */
+    }
+
     .tool {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: max-content;
         text-align: center;
         vertical-align: center;
     }
+
     .tool-name {
         font-size: 1.5rem;
-    }
+    } */
 }
 
 /* Education Section */

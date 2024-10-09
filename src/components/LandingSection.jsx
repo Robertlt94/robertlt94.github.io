@@ -18,7 +18,7 @@ const LandingSection = ({viewPortWidth}) => {
             </div>
             <TypeWriter />
             <article>
-                <p>{robert.about}</p>
+                <p className='about-me'>{robert.about}</p>
             </article>
             <ToolBelt viewPortWidth={viewPortWidth} />
         </section>

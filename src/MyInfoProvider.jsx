@@ -230,18 +230,14 @@ const MyInfoProvider = ({children}) => {
         {
             currentTechStack:
                 [
-                    {name: "React.js", icon: "reactjs"}, 
-                    {name: "React Router", icon: "reactrouter" },
-                    {name: "HTML5", icon: "html5" },
                     {name: "Bootstrap 4", icon: "bootstrap4" },
-                    {name: "Figma", icon: "figma" },
-                    {name: "PostgreSQL", icon: "postgresql" },
                     {name: "Canva", icon: "canva" },
                     {name: "CSS3", icon: "css3" },
                     {name: "Figma", icon: "figma" },
                     {name: "Git", icon: "git" },
                     {name: "Github", icon: "github" },
                     {name: "Homebrew", icon: "homebrew" },
+                    {name: "HTML5", icon: "html5" },
                     {name: "Jest", icon: "jest" },
                     {name: "Jira", icon: "jira" },
                     {name: "jQuery", icon: "jquery" },
@@ -249,6 +245,9 @@ const MyInfoProvider = ({children}) => {
                     {name: "MaterialUI", icon: "materialui" },
                     {name: "Node.js", icon: "nodejs" },
                     {name: "Npm", icon: "npm" },
+                    {name: "PostgreSQL", icon: "postgresql" },
+                    {name: "React.js", icon: "reactjs"},
+                    {name: "React Router", icon: "reactrouter" },
                     {name: "Slack", icon: "slack" },
                     {name: "VScode", icon: "vscode" }
                 ],

@@ -46,7 +46,7 @@ const navBar = ({viewPortWidth}) => {
             :
                 <>
                     <ul>
-                        <li><a href="#top-of-page">Robert Thao</a></li>
+                        <li><a href="#top-of-page">About</a></li>
                         <li><a href="#education-section-anchor">Education</a></li>
                         <li><a href="#experiences-section-anchor">Experiences</a></li>
                         <li><a href="#project-section-anchor">Projects</a></li>
