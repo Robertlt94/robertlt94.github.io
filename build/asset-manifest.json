@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b10747af.css",
-    "main.js": "/static/js/main.f932c84d.js",
+    "main.js": "/static/js/main.31fc339e.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Boberto.png": "/static/media/Boberto.01e950beff1eab48830f.png",
     "static/media/Metro_State_University.jpg": "/static/media/Metro_State_University.e233d0f21d09e19a6454.jpg",
@@ -14,11 +14,11 @@
     "static/media/linkedin_logo.svg": "/static/media/linkedin_logo.c5b0b1b4792c4adac01506428d371c41.svg",
     "index.html": "/index.html",
     "main.b10747af.css.map": "/static/css/main.b10747af.css.map",
-    "main.f932c84d.js.map": "/static/js/main.f932c84d.js.map",
+    "main.31fc339e.js.map": "/static/js/main.31fc339e.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b10747af.css",
-    "static/js/main.f932c84d.js"
+    "static/js/main.31fc339e.js"
   ]
 }
